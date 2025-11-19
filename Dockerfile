@@ -14,9 +14,9 @@ FROM node:22.14-bullseye-slim AS main-app
 
 ARG DEBIAN_FRONTEND=noninteractive
 
-RUN mkdir /data
+RUN mkdir /app
 
-WORKDIR /data
+WORKDIR /app
 
 COPY ./apps/web/package.json ./apps/web/playwright.config.ts ./apps/web/
 
